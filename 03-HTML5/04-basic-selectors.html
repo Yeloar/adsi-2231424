@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basic Selectors</title>
+	<style>
+		* {
+			border: 2px dotted green;
+			margin: 10px;
+			padding: 10px;
+		}
+		h2 {
+			background: grey;
+		}
+		p span {
+			background: deepskyblue;
+			margin: 0px;
+			padding: 0px;
+		}
+		.highlight {
+			background-color: lightgreen;
+		}
+		#elem03 {
+			background-color: purple;
+			color: white;
+		}
+		div.box p.first {
+			background: black;
+			color: silver;
+		}
+	</style>
+</head>
+<body>
+	<h1>Basic Selectors</h1>
+
+	<h2>Universal Selector: * </h2>
+	<div>
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, dolore?
+		</p>
+	</div>
+	<h2>Type/Label Selector: h2 </h2>
+	<h2>Descending Selector: p span </h2>
+		<div>
+		<p>
+			<span>Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Non excepturi delectus odio optio, quisquam dolore voluptates<span>temporibus placeat</span> nam et.
+		</p>
+	</div>
+	<h2 class="highlight">Class Selector: .highlight </h2>
+	<h2>ID Selector: #elem03 </h2>
+	<!--ol>li{Element $}#elem$$*5-->
+	<ol>
+		<li id="elem01">Element 1</li>
+		<li id="elem02">Element 2</li>
+		<li id="elem03">Element 3</li>
+		<li id="elem04">Element 4</li>
+		<li id="elem05">Element 5</li>
+	</ol>
+	<h2>Conbine Selector: div.box p.first </h2>
+	<div class="box">
+		<p class="first">lorem</p>
+		<p>lorem</p>
+		<p>lorem</p>
+	</div>
+
+</body>
+</html>
