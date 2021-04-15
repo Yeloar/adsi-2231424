@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Advance Selectors</title>
+	<style>
+		ul > li {
+			background: cadetblue;
+			margin: 5px;
+			padding: 5px;			
+		}
+		ul li + li + li {
+			background: yellowgreen;
+		}
+		li[class] {
+			background: orchid;
+		}
+	</style>
+</head>
+<body>
+	<h1>Advance Selectors</h1>
+
+	<h2>Children Selector: ul > li</h2>
+	<h2>Adjacent Selector: ul li + li + li</h2>
+	<h2>Attribute Selector: li[class]</h2>
+
+	<ol>
+		<li>
+			Kinetsu No Yaiba
+			<ul>
+				<li class: "highlight">Tanjiro</li>
+				<li>Zenitsu</li>
+				<li>Inosuke</li>
+			</ul>
+		</li>
+		<li>
+			Shingeki No Kyojin
+			<ul>
+				<li class: "highlight">Eren</li>
+				<li>Mikasa</li>
+				<li>Armin</li>
+			</ul>
+		</li>
+	</ol>
+
+</body>
+</html>
