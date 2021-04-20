@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clear Float</title>
+	<style>
+		main {
+			margin: 40px;
+			width: 400px;
+		}
+		section.bigbox {
+			border: 2px solid #777;
+			padding: 0px 8px;
+		}
+		section.bigbox img {
+			float: left;
+		}
+		section.bigbox p {
+			border: 1px solid #777;
+		}
+		section.bigbox p.clear {
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<h2>Float position in the image</h2>
+		<section class="bigbox">
+			<img src="imgs/daria.jpg" alt="">
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et esse voluptates officiis accusamus ea corporis expedita sapiente praesentium natus necessitatibus a, consectetur incidunt deserunt consequuntur omnis, dolor blanditiis quam. Optio, accusamus tempore enim. Accusamus molestias ratione suscipit nam sit amet enim consectetur quibusdam quae ducimus, id error harum inventore aliquid.
+			</p>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum, eligendi, non aperiam quasi incidunt, accusamus odio, deserunt consequatur quia vero? Optio ducimus amet, fuga autem cupiditate beatae, in dolor sequi quam! Veniam recusandae facere perferendis officiis fuga impedit neque, culpa amet eius illo alias voluptatum, inventore harum possimus, eaque.
+			</p>
+		</section>
+		<h2>Paragraph 2 with clear</h2>
+		<section class="bigbox">
+			<img src="imgs/daria.jpg" alt="">
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et esse voluptates officiis accusamus ea corporis expedita sapiente praesentium natus necessitatibus a, consectetur incidunt deserunt consequuntur omnis, dolor blanditiis quam. Optio, accusamus tempore enim. Accusamus molestias ratione suscipit nam sit amet enim consectetur quibusdam quae ducimus, id error harum inventore aliquid.
+			</p>
+			<p class="clear">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum, eligendi, non aperiam quasi incidunt, accusamus odio, deserunt consequatur quia vero? Optio ducimus amet, fuga autem cupiditate beatae, in dolor sequi quam! Veniam recusandae facere perferendis officiis fuga impedit neque, culpa amet eius illo alias voluptatum, inventore harum possimus, eaque.
+			</p>
+		</section>
+	</main>
+</body>
+</html>
