@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Overflow (visible/hidden/scroll)</title>
+
+	<style>
+		main {
+			margin: 40px auto;
+			width: 500px;
+		}
+		main section {
+			border: 1px solid #777;
+			display: inline-block;
+			height: 180px;
+			padding: 10px;
+			vertical-align: top;
+			width: 130px;
+		}
+		main section h3 {
+			background-color: #bbb;
+			margin: 0;
+			padding: 4px;
+		}
+		main section.visible { overflow: visible; }
+		main section.hidden { overflow: hidden; }
+		main section.scroll { overflow: scroll; }
+		
+		/* (section>h3{overflow:visible}+p{lorem5})*3 */
+	</style>
+</head>
+<body>
+	<main>
+  		<section class="visible">
+  			<h3>overflow:visible</h3>
+  			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas suscipit sunt ut cumque accusamus! Blanditiis, molestias quod impedit a optio eos fugit vero labore tempora magnam reprehenderit explicabo laudantium voluptatum corporis aut nihil exercitationem, dicta ad animi? Repudiandae blanditiis nisi magni, ipsa cumque eaque odio aliquid, asperiores, molestias reiciendis dolorem.</p>
+  		</section>
+  		<section class="hidden">
+  			<h3>overflow:hidden</h3>
+  			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex harum ipsa repellat eligendi provident architecto laudantium reiciendis, sapiente temporibus consequatur hic voluptatum perferendis maxime quaerat totam sequi expedita, molestias accusamus laboriosam ut iste. Natus, error, vitae. Delectus unde, quod, impedit, nulla dignissimos excepturi voluptate non eaque asperiores optio amet, iste?</p>
+  		</section>
+  		<section class="scroll">
+  			<h3>overflow:scroll</h3>
+  			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut explicabo reprehenderit dolorem esse pariatur, nemo, ut mollitia id, ducimus quia libero fugit, quidem repellat a totam fuga ad. Ea sed neque repellendus, odit, doloribus explicabo blanditiis deserunt provident molestiae assumenda quod pariatur earum enim voluptatem, natus minus minima porro.</p>
+  		</section>
+  	</main>
+</body>
+</html>
