@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Sprites</title>
+    <style>
+        body {           
+            border: 5px solid #777;
+            background-color: #26a056;
+            margin: 0px;
+            padding: 0px;
+            width: 99%;
+        }
+        section.sprite {
+            border: 0px solid;
+            margin: 0px auto;
+            width: 800px;
+        }
+        div.sprite {
+            border: 0px solid #fff;
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -10px -400px;
+            margin: 0px auto;
+            height: 180px;
+            width: 180px;
+        }   
+        section.topMenu {
+            border: 0px solid #000;
+            margin: 20px auto;
+            width: 835px;
+        }
+        li.topMenu {
+            display: inline-block;
+            line-height: 3.5em;
+            text-align: center;
+            height: 62px;
+            width: 140px;
+            margin-left: 20px;
+        }
+        a.topMenu:link,
+        a.topMenu:visited {
+            border-bottom: 6px solid #fff;
+            background-color: #006633;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+        }
+        a.topMenu:hover {
+            background-color: #003;
+            border-bottom: 6px solid #ddbb11;
+        }
+        /*  */
+        section.CentralPhoto {
+            background-color: #006633;
+            border: 0px solid #000;
+            margin: 40px auto;
+            width: 796px;
+        }
+        div.CentralPhoto {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -525px -7px;
+            border: 1px solid #fff;
+            display: inline-block;
+            height: 200px;
+            margin: 20px 0px 20px 20px;
+            width: 233px;
+        }
+        article.CentralPhoto {
+            border: 0px solid #800;
+            text-align: center;
+            line-height: 3.5em;
+        }
+        a.CentralPhoto:link,
+        a.CentralPhoto:visited {
+            background-color: #fff;
+            color: #000;
+            display: block;
+            font-size: 1.5em;
+            font-weight: bolder;
+            text-decoration: none; 
+        }
+        a.CentralPhoto:hover {
+            background-color: #fff;
+        }
+        /* -*/
+        section.seccionCentro {
+            border: 0px solid #fff;
+            background-color: #006633;
+            margin: 40px auto;
+            padding: 1px 0px 15px 0px;
+            width: 796px;
+        }
+        div.seccionCentro {
+            border: 0px solid #000;
+            background-color: #fff;
+            margin: 15px auto 0px auto;
+            height: 202px;
+            width: 756px;
+        }
+        article.central {
+            display:inline-block;
+            position: relative;
+            margin: 0px 0px;
+            height: 172px;
+        }
+        article.seccionImagenDerecha {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -70px -215px;
+            border: 0px solid #f00;
+            height: 155px;
+            width: 150px;
+            left: 604px; top: -310px;
+            z-index:1;
+        }
+        article.seccionImagenIzquierda {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -265px -490px;
+            border: 0px solid #f00;
+            height: 120px;
+            width: 150px;
+            top: 40px;
+            z-index: 1;
+        }
+        article.seccionCentralPhoto {
+            border: 0px solid #00f;
+            text-align: justify;
+            line-height: 1.5em;
+            word-spacing: 2px;
+            padding: 15px 175px;
+            width: 405px;
+            left: 0px; top: -125px;
+            z-index: 2;
+        }
+        
+        a.seccionCentralPhoto:link,
+        a.seccionCentralPhoto:visited {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a.seccionCentralPhoto:hover {
+            color: #0a3; 
+        }
+         /* */
+         section.seccionFinal {
+            background-color: #fff;
+            border: 0px solid black;
+            margin: 0px auto 20px auto;
+            height: 260px;
+            width: 796px;
+        }
+        div.seccionFinal {
+            border: 0px solid #000;
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -520px -420px;
+            margin: 0px auto;
+            height: 185px;
+            width: 240px;
+        }  
+        section.menuBottom {
+            border: 0px solid #000;
+            margin: 0px auto;
+            width: 835px;
+        }
+        li.menuBottom {
+            border: 0px solid #000;
+            display: inline-block;
+            line-height: 3em;
+            text-align: center;
+            height: 42px;
+            width: 120px;
+            margin-left: 22px;
+        }
+        a.menuBottom:link, a.menuBottom:visited {
+            border: 0px solid red;
+            color: #000;
+            display: block;
+            font-size: 0.9em;
+            text-decoration: none;
+            height: 100%;
+        }
+        a.menuBottom:hover {
+            border-bottom: 6px solid #006633;
+        }
+    </style>
+</head>
+<body>
+    <section class="sprite">
+        <div class="sprite"></div>
+    </section>
+
+    <!--  -->
+    <section class="topMenu">
+        <li class="topMenu"><a href="" class="topMenu">INICIO</a></li>
+        <li class="topMenu"><a href="" class="topMenu">NOSOTROS</a></li>
+        <li class="topMenu"><a href="" class="topMenu">PORTAFOLIO</a></li>
+        <li class="topMenu"><a href="" class="topMenu">SERVICIOS</a></li>
+        <li class="topMenu"><a href="" class="topMenu">CONTACTO</a></li>
+    </section>
+
+    <!--  -->
+    <section class="CentralPhoto">
+        <div class="CentralPhoto"> 
+            <article class="CentralPhoto"> 
+                <a href="" class="CentralPhoto">Sprite 01</a>
+            </article>
+        </div>
+        <div class="CentralPhoto"> 
+            <article class="CentralPhoto"> 
+                <a href="" class="CentralPhoto">Sprite 02</a>
+            </article>
+        </div>
+        <div class="CentralPhoto"> 
+            <article class="CentralPhoto"> 
+                <a href="" class="CentralPhoto">Sprite 03</a>
+            </article>
+        </div>
+    </section>
+
+    <!--  -->
+    <section class="seccionCentro">
+        <div class="seccionCentro"> 
+            <article class="central seccionImagenIzquierda"></article>
+            <article class="central seccionCentralPhoto"> 
+                <a href="" class="seccionCentralPhoto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deserunt et fugiat voluptates veritatis vel quaerat fuga ipsam labore aliquid aspernatur, excepturi eos, cupiditate quod, dolore dignissimos, voluptate optio esse neque asperiores eligendi fugit minima. Quisquam ullam doloremque officia saepe.</a>
+            </article>
+            <article class="central seccionImagenDerecha"></article>
+        </div>
+        <div class="seccionCentro"> 
+            <article class="central seccionImagenIzquierda"></article>
+            <article class="central seccionCentralPhoto"> 
+                <a href="" class="seccionCentralPhoto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente explicabo, soluta modi, est cum a nam vero saepe nostrum, ea praesentium quidem mollitia totam, ut ad veritatis maiores sunt ullam similique voluptatem tempora odit ipsam officia? Provident, neque fugiat magnam?</a>
+            </article>
+            <article class="central seccionImagenDerecha"></article>
+        </div>
+        <div class="seccionCentro"> 
+            <article class="central seccionImagenIzquierda"></article>
+            <article class="central seccionCentralPhoto"> 
+                <a href="" class="seccionCentralPhoto">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Nostrum, culpa. Voluptatem numquam harum dolor, ex, ratione porro corrupti dignissimos nesciunt, hic quos quaerat, nostrum et ut aut est mollitia assumenda totam excepturi recusandae expedita minima quam. Eaque nisi quisquam tempore!</a>
+            </article>
+            <article class="central seccionImagenDerecha"></article>
+        </div>
+    </section>
+
+    <!--  -->
+    <section class="seccionFinal">
+        <div class="seccionFinal"></div>
+        <section class="menuBottom">
+            <li class="menuBottom"><a href="" class="menuBottom">INICIO</a></li>
+            <li class="menuBottom"><a href="" class="menuBottom">NOSOTROS</a></li>
+            <li class="menuBottom"><a href="" class="menuBottom">PORTAFOLIO</a></li>
+            <li class="menuBottom"><a href="" class="menuBottom">SERVICIOS</a></li>
+            <li class="menuBottom"><a href="" class="menuBottom">CONTACTO</a></li>
+        </section>
+    </section>
+</body>
+</html>
