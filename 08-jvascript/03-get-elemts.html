@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Get Elemt</title>
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+	<main>
+		<header>
+			<h1><span><a href="index.html">&larr;</a></span>Get Elements</h1>
+		</header>
+		<section>
+			<h2>Get Id</h2>
+			<strong id="year"></strong>
+			<!--------------->
+			<h2>Get TagName</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, doloribus?</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, doloribus?</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, doloribus?</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, doloribus?</p>
+			<strong id="tags"></strong>
+			<!--------------->
+			<h2>Get ClassName</h2>
+		</section>
+	</main>
+
+	<script>
+		// Get Elemet By Id - let para declarar local - var global
+		let year = document.getElementById('year');
+		let today = new Date();
+		year.innerText = "Current year" + today.getFullYear();
+		// Get Elemet TagName
+		let ntags = document.getElementByTagName('p');
+		let tags = document.getElementById('tags');
+		tags.innerText = "There are: " + ntags.length + " paragraphs";
+		// Get Elemet By ClassName
+
+		// Query Selector
+	</script>
+</body>
+</html>
